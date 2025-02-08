@@ -1122,7 +1122,7 @@ function formatNumber(num) {
 // Fonction pour mettre à jour les statistiques depuis Dexscreener
 async function updateStats() {
     try {
-        const response = await fetch('https://api.dexscreener.com/latest/dex/tokens/6tGfpGhD3SGUj9ys3ffSW5azUfgyX6JthUgsQ9Kemoon');
+        const response = await fetch('https://api.dexscreener.com/latest/dex/tokens/FcsgEKX5cu2xeYQeQ5GiWKvPCEYmdBtPRTvYNFrLxoxo');
         const data = await response.json();
         
         if (data.pairs && data.pairs[0]) {
@@ -1524,7 +1524,7 @@ updateSlides();
        // Fonction pour mettre à jour les données du token (popup et live stats)
 async function updateAllTokenData() {
     try {
-        const response = await fetch('https://api.dexscreener.com/latest/dex/tokens/6tGfpGhD3SGUj9ys3ffSW5azUfgyX6JthUgsQ9Kemoon');
+        const response = await fetch('https://api.dexscreener.com/latest/dex/tokens/FcsgEKX5cu2xeYQeQ5GiWKvPCEYmdBtPRTvYNFrLxoxo');
         const data = await response.json();
         
         if (data.pairs && data.pairs[0]) {
@@ -1575,7 +1575,7 @@ setInterval(updateAllTokenData, 30000);
         <script>
             async function updateFooterPrice() {
                 try {
-                    const response = await fetch('https://api.dexscreener.com/latest/dex/tokens/6tGfpGhD3SGUj9ys3ffSW5azUfgyX6JthUgsQ9Kemoon');
+                    const response = await fetch('https://api.dexscreener.com/latest/dex/tokens/FcsgEKX5cu2xeYQeQ5GiWKvPCEYmdBtPRTvYNFrLxoxo');
                     const data = await response.json();
             
                     if (data.pairs && data.pairs[0]) {
