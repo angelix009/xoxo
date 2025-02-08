@@ -761,6 +761,41 @@ nav.scrolled {
                 height: 300px;
             }
         }
+         @media (max-width: 768px) {
+    /* Ajuster la promo section pour mobile */
+    .promo-section {
+        padding-top: 1200px; /* Décaler pour éviter que le GIF soit caché par le navbar */
+        text-align: center;
+    }
+
+    /* Centrer et agrandir le GIF */
+    .left-content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px; /* Ajouter un espace entre le GIF et le texte */
+    }
+
+    .left-content img {
+        max-width: 90%; /* Agrandir le GIF */
+        height: auto;
+    }
+
+    /* Centrer et rétrécir les boutons */
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .button {
+        width: auto;
+        min-width: 140px;
+        max-width: 200px;
+        padding: 10px 20px;
+    }
+}
+
         @media (max-width: 768px) {
     /* Ajuster la promo section pour mobile */
     .promo-section {
@@ -1397,6 +1432,42 @@ updateSlides();
 .button:hover {
     transform: translateY(-2px);
     box-shadow: 0 0 15px var(--pink-primary);
+}
+@media (max-width: 1200px) {
+    .promo-container {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 10%;
+        font-size: 0.7em;
+    }
+
+    .left-content {
+        order: 1;
+        padding-right: 0;
+        margin-bottom: 20px;
+        width: 30%;
+    }
+
+    .right-content {
+        order: 2;
+        padding: 15px;
+        max-width: 100%;
+        margin-top: -25%;
+    }
+
+    .left-content img {
+        max-width: 10px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    a { 
+        text-align: center;
+
+    }
 }
 
 /* Responsive */
